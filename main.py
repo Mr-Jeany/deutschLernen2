@@ -38,7 +38,7 @@ async def start(message: Message):
     await message.reply("👋 Hallo...\nДавайте учить deutsch Sprache вместе... \nLasst uns gemeinsam Deutsch lernen!", reply_markup=keyboard)
 
 @disp.message(F.text == "📝 Pluralformen")
-async def genders(message: Message, variables: dict):
+async def plural(message: Message, variables: dict):
     # Проверка пользователя и режима
     if message.chat not in variables:
         variables[message.chat] = {}
